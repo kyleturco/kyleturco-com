@@ -1,0 +1,19 @@
+{
+  "name": "kyleturco-com",
+  "version": "1.0.0",
+  "description": "Kyle Turco - Portfolio Site",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyleturco/kyleturco-com.git"
+  },
+  "author": "Kyle Turco <kyleturco@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kyleturco/kyleturco-com/issues"
+  },
+  "homepage": "https://github.com/kyleturco/kyleturco-com#readme"
+}
