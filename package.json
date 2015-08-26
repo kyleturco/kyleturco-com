@@ -1,5 +1,5 @@
 {
-  "name": "kyleturco-com",
+  "name": "kyleturco",
   "version": "1.0.0",
   "description": "Kyle Turco - Portfolio Site",
   "main": "index.html",
@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/kyleturco/kyleturco-com/issues"
   },
-  "homepage": "https://github.com/kyleturco/kyleturco-com#readme"
+  "homepage": "https://github.com/kyleturco/kyleturco-com#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  },
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "jade": "^1.11.0",
+    "sass": "^0.5.0"
+  }
 }
