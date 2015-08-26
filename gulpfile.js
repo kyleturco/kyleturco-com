@@ -1,55 +1,77 @@
-/* global require */
-"use strict";
+var gulp = require('gulp'),
+    $    = require('gulp-load-plugins')({
+      pattern: ['gulp-*', 'del', 'main-bower-files', 'browser-sync']
+    });
 
-var gulp = require("gulp");
-var connect = require("gulp-connect");
-var jade = require("gulp-jade");
-var sass = require("gulp-sass");
-
-gulp.task("jade", function() {
-  gulp.src("./src/*.jade")
-  .pipe(jade({
-    locals: {}
-  }))
-  .pipe(gulp.dest("./src"))
-  .pipe(connect.reload());
+gulp.task('clean', function (cb) {
+  $.del('public', cb);
 });
 
-gulp.task("sass", function () {
-  gulp.src("./src/styles/*.scss")
-  .pipe(sass().on("error", sass.logError))
-  .pipe(gulp.dest("./src/styles"))
-  .pipe(connect.reload());
+gulp.task('bower', function () {
+  gulp
+    .src($.mainBowerFiles('**/*.js'))
+    .pipe($.concat('build.js'))
+    .pipe(gulp.dest('public/lib'));
+  gulp
+    .src($.mainBowerFiles('**/*.scss'))
+    .pipe($.concat('build.css'))
+    .pipe(gulp.dest('public/lib'));
 });
 
-gulp.task("connect", function() {
-  connect.server({
-    root: "src",
-    port: 8080,
-    livereload: true
-  });
+gulp.task('jade:dev', function () {
+  gulp
+    .src(['src/**/*.jade', '!app/**/_*.jade'])
+    .pipe($.jade({
+      pretty: true
+    }))
+    .pipe(gulp.dest('public'));
 });
 
-gulp.task("html", function () {
-  gulp.src("./src/*.html").pipe(connect.reload());
+gulp.task('sass:dev', function () {
+  gulp
+    .src('src/assets/main.scss')
+    .pipe($.sass()
+      .on('error', $.sass.logError))
+    .pipe(gulp.dest('public/css'));
 });
 
-gulp.task("js", function () {
-  gulp.src("./src/scripts/*.js").pipe(connect.reload());
+gulp.task('js:dev', function () {
+  gulp.src('src/**/*.js')
+    .pipe($.babel())
+    .pipe(gulp.dest('public'));
 });
 
-gulp.task("css", function () {
-  gulp.src("./src/styles/*.css").pipe(connect.reload());
+// gulp.task('img', function () {
+//   gulp.src('app/*.png')
+//     .pipe(gulp.dest('public/'));
+// });
+
+gulp.task('browser-sync', function() {
+    $.browserSync.init({
+        server: {
+            baseDir: "./public"
+        }
+    });
 });
 
-gulp.task("watch", function () {
-  // gulp.watch(["./src/*.html"], ["html"]);
-  gulp.watch(["./src/*.jade"], ["jade"]);
-
-  // gulp.watch(["./src/*.css"], ["css"]);
-  gulp.watch(["./src/styles/*.scss"], ["sass"]);
-
-  gulp.watch(["./src/scripts/*.js"], ["js"]);
+gulp.task('copy', function () {
+  gulp.src('src/CNAME')
+    .pipe(gulp.dest('public'));
 });
 
-gulp.task("default", ["connect", "watch"]);
+
+
+//gulp.task('build:prod', ['jade:prod', 'sass:prod', 'js:prod', 'bower', 'copy']);
+gulp.task('build:dev', ['jade:dev', 'sass:dev', 'js:dev', 'bower']);
+
+gulp.task('serve', ['build:dev'], function () {
+  gulp.start('browser-sync');
+  gulp.watch(['src/**/*.jade'], ['jade:dev'],['clean']).on('change', $.browserSync.reload);
+  gulp.watch(['src/**/*.scss'], ['sass:dev']).on('change', $.browserSync.reload);
+  gulp.watch(['src/**/*.js'], ['js:dev']).on('change', $.browserSync.reload);
+ // gulp.watch(['src/**/*', '!src/**/*.jade', '!src/**/*.scss', '!src/**/*.js'], ['build:dev']).on('change', $.browserSync.reload);
+});
+
+gulp.task('default', ['clean'], function () {
+  gulp.start('serve');
+});
