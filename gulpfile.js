@@ -29,10 +29,10 @@ gulp.task('jade:dev', function () {
 
 gulp.task('sass:dev', function () {
   gulp
-    .src('src/assets/main.scss')
+    .src('src/**/main.scss')
     .pipe($.sass()
       .on('error', $.sass.logError))
-    .pipe(gulp.dest('public/css'));
+    .pipe(gulp.dest('public'));
 });
 
 gulp.task('js:dev', function () {
