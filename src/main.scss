@@ -9,3 +9,51 @@ p {
   color: #676767;
   line-height: 27px;
 }
+
+//Header Styles
+
+.navbar {
+  background-color: #ffffff;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  .container {
+    border-bottom: 1px solid #dedede;
+  }
+  .header-nav-right {
+    float: right;
+    margin-top: 11px;
+  }
+  .header-nav-left {
+    float: left;
+  }
+  .header-links {
+    font-family: 'Karla';
+    color: #676767;
+    font-size: 16px;
+  }
+  .header-links li:hover {
+    color: #3d97d2;
+    border-bottom: 3px solid #3d97d2;
+  }
+}
+
+.logo {
+  font-family: 'Karla';
+  text-transform: uppercase;
+}
+
+
+// Footer Styles
+.footer {
+  .container {
+    border-top: 1px solid #dedede;
+    padding-top: 25px;
+  }
+}
+
+// Global/Random
+
+.container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
