@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('bankRoll').filter('objToArr', function () {
+angular.module('kyleTurco').filter('objToArr', function () {
   return function (obj) {
     if (obj) {
       return Object.keys(obj).map(function (key) {

@@ -1,5 +1,5 @@
 angular
-  .module('bankRoll')
+  .module('kyleTurco')
 
   .filter('objToArr', function(){
     return function(obj){

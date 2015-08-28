@@ -1,2 +1,2 @@
 angular
-  .module('kyleTurco', ['ngRoute', 'ui.bootstrap']);
+  .module('kyleTurco', ['ngRoute']);
