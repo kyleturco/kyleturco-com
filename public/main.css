@@ -94,10 +94,17 @@ p {
   max-width: 1000px; }
 
 .button-main-blue {
-  font-family: 'Arimo';
+  font-family: 'Karla', sans-serif;
   text-transform: uppercase;
   background-color: #3d97d2;
-  color: #fff; }
+  color: #fff;
+  border-radius: 0px;
+  border: none;
+  padding: 9px 19px 9px 20px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 .hero-section {
   background: url("http://i61.tinypic.com/2n8s9w.jpg") no-repeat;
@@ -131,3 +138,17 @@ p.hero-text {
   height: 245px;
   margin-top: 25px;
   border: 1px solid #dedede; }
+
+.web-background .container {
+  padding-left: 0px; }
+
+.web-background .col-md-4 {
+  padding-left: 0px; }
+
+.web-screenshot {
+  background: url("http://i58.tinypic.com/2w5ke0x.jpg") no-repeat;
+  background-size: 300px 245px;
+  display: block;
+  width: 300px;
+  height: 225px;
+  margin-top: 25px; }
