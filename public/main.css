@@ -42,7 +42,6 @@ p {
   color: #989898; }
 
 .footer {
-  position: absolute;
   bottom: 0;
   width: 100%;
   padding-top: 20px;
@@ -69,10 +68,44 @@ p {
 
 .container {
   padding-left: 0px;
-  padding-right: 0px; }
+  padding-right: 0px;
+  max-width: 1000px; }
 
 .button-main-blue {
   font-family: 'Arimo';
   text-transform: uppercase;
   background-color: #3d97d2;
   color: #fff; }
+
+.hero-section {
+  background: url("http://i61.tinypic.com/2n8s9w.jpg") no-repeat;
+  background-size: cover;
+  padding: 150px 0 150px 0;
+  margin-top: -20px; }
+
+.hero-text {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center; }
+
+h1.hero-text {
+  color: #ffffff;
+  font-size: 42px;
+  margin-bottom: 12px; }
+
+p.hero-text {
+  color: #ffffff;
+  font-size: 28px; }
+
+.about-background .container {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.about-photo {
+  background: url("http://i59.tinypic.com/30igdc6.png") no-repeat;
+  background-size: 210px 245px;
+  display: block;
+  width: 210px;
+  height: 245px;
+  margin-top: 25px;
+  border: 1px solid #dedede; }
