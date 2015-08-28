@@ -2,11 +2,33 @@ h1, h2, h3 {
   font-family: 'Arimo', sans-serif;
   color: #1f1f1f; }
 
+h3 {
+  font-size: 26px; }
+
 p {
   font-family: 'Karla';
   font-size: 17px;
   color: #676767;
   line-height: 27px; }
+
+.big-header {
+  font-family: 'Arimo', sans-serif;
+  color: #1f1f1f;
+  font-size: 45px; }
+
+.big-header-white {
+  font-family: 'Arimo', sans-serif;
+  color: #ffffff;
+  font-size: 45px; }
+
+.subheader {
+  font-family: 'Karla', sans-serif;
+  font-size: 35px; }
+
+.subheader-white {
+  font-family: 'Karla', sans-serif;
+  font-size: 28px;
+  color: #ffffff; }
 
 .navbar {
   background-color: #ffffff;
