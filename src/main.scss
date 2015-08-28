@@ -49,10 +49,32 @@ p {
   bottom: 0;
   width: 100%;
   padding-top: 20px;
-  height: 60px;
   background-color: #ffffff;
   .container {
     border-top: 1px solid #dedede;
+  }
+  p {
+    padding-top: 20px;
+    padding-bottom: 8px;
+    font-size: 16px;
+  }
+  .footer-icons {
+    padding-top: 16px;
+    padding-bottom: 8px;
+    font-size: 24px;
+    color: #676767;
+    i {
+      padding-left: 20px;
+    }
+    i:hover {
+      color: #3d97d2;
+    }
+  }
+  .footer-right {
+    float: right;
+  }
+  .footer-left {
+    float: left;
   }
 }
 
