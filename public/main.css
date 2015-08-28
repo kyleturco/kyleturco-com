@@ -23,6 +23,8 @@ p {
     font-family: 'Karla';
     color: #676767;
     font-size: 16px; }
+    .navbar .header-links li {
+      margin-left: 15px; }
   .navbar .header-links li:hover {
     color: #3d97d2;
     border-bottom: 3px solid #3d97d2; }
