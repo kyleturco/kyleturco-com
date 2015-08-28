@@ -36,10 +36,19 @@ p {
     border-bottom: 3px solid #3d97d2;
   }
 }
-
-.logo {
-  font-family: 'Karla';
-  text-transform: uppercase;
+.header-logo {
+  .logo-header {
+    font-family: 'Karla';
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .logo-subheader {
+    margin-top: -3px;
+    margin-bottom: 7px;
+    font-size: 15px;
+    color: #989898;
+  }
 }
 
 
@@ -83,4 +92,12 @@ p {
 .container {
   padding-left: 0px;
   padding-right: 0px;
+}
+
+//Button Styles
+.button-main-blue {
+  font-family: 'Arimo';
+  text-transform: uppercase;
+  background-color: #3d97d2;
+  color: #fff;
 }
