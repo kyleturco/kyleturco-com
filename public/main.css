@@ -179,7 +179,7 @@ p.hero-text {
   padding-left: 0px;
   padding-right: 0px; }
 
-.music-section {
+.audio-section {
   margin-bottom: 40px; }
 
 .music-clip, .music-video {
@@ -192,7 +192,7 @@ p.hero-text {
   margin-bottom: 20px; }
 
 .youtube-clips {
-  padding-top: 12px; }
+  padding-top: 35px; }
 
 iframe {
   width: 100%;
