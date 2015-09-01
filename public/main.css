@@ -30,6 +30,13 @@ p {
   font-size: 28px;
   color: #ffffff; }
 
+a:hover {
+  text-decoration: none;
+  color: inherit; }
+
+a:focus {
+  color: #3d97d2; }
+
 .navbar {
   background-color: #ffffff;
   padding-top: 12px;
@@ -49,7 +56,8 @@ p {
       margin-left: 15px; }
   .navbar .header-links li:hover {
     color: #3d97d2;
-    border-bottom: 3px solid #3d97d2; }
+    border-bottom: 3px solid #3d97d2;
+    text-decoration: none; }
 
 .header-logo .logo-header {
   font-family: 'Karla';
