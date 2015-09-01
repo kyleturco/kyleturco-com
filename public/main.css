@@ -30,7 +30,7 @@ p {
   font-size: 28px;
   color: #ffffff; }
 
-a:hover {
+a:hover, a:visited, a:active, a:focus {
   text-decoration: none;
   color: inherit; }
 
@@ -57,7 +57,8 @@ a:focus {
   .navbar .header-links li:hover {
     color: #3d97d2;
     border-bottom: 3px solid #3d97d2;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: 0.3s; }
 
 .header-logo .logo-header {
   font-family: 'Karla';
@@ -71,6 +72,9 @@ a:focus {
   margin-bottom: 7px;
   font-size: 15px;
   color: #989898; }
+
+.header-logo a {
+  color: inherit; }
 
 .footer {
   bottom: 0;
@@ -162,8 +166,13 @@ p.hero-text {
   height: 225px;
   margin-top: 25px; }
 
-.youtube-section .col-md-6 {
-  padding-left: 0px; }
+.music-background .col-md-12 {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.container .col-md-6 {
+  padding-left: 0px;
+  padding-right: 0px; }
 
 .illustration-background .col-md-12 {
   padding-left: 0px;

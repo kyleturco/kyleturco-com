@@ -37,13 +37,14 @@ p {
   color: #ffffff;
 }
 
-a:hover {
+a:hover, a:visited, a:active, a:focus {
   text-decoration: none;
   color: inherit;
 }
 
 a:focus {
   color: #3d97d2;
+  // border-bottom: 3px solid #3d97d2;
 }
 
 
@@ -75,6 +76,7 @@ a:focus {
     color: #3d97d2;
     border-bottom: 3px solid #3d97d2;
     text-decoration: none;
+    transition: 0.3s;
   }
 }
 .header-logo {
@@ -90,6 +92,9 @@ a:focus {
     margin-bottom: 7px;
     font-size: 15px;
     color: #989898;
+  }
+  a {
+    color: inherit;
   }
 }
 
@@ -216,10 +221,17 @@ p.hero-text {
 }
 
 //Music Page
+.music-background {
+  .col-md-12 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
 
-.youtube-section {
+.container {
   .col-md-6 {
     padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
