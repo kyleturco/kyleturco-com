@@ -96,6 +96,8 @@ a:focus {
       padding-left: 20px; }
     .footer .footer-icons i:hover {
       color: #3d97d2; }
+    .footer .footer-icons .fa {
+      color: #676767; }
   .footer .footer-right {
     float: right; }
   .footer .footer-left {
@@ -118,6 +120,9 @@ a:focus {
   letter-spacing: 1px;
   margin-top: 10px;
   margin-bottom: 10px; }
+
+hr {
+  border-top: 1px solid #dedede; }
 
 .hero-section {
   background: url("http://i61.tinypic.com/2n8s9w.jpg") no-repeat;
@@ -173,6 +178,9 @@ p.hero-text {
 .container .col-md-6 {
   padding-left: 0px;
   padding-right: 0px; }
+
+.music-section {
+  margin-bottom: 40px; }
 
 .illustration-background .col-md-12 {
   padding-left: 0px;
