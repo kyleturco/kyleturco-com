@@ -11,7 +11,9 @@ angular
         templateUrl: 'assets/pages/web.html'
       })
       .when('/art', {
-        templateUrl: 'assets/pages/illustration.html'
+        templateUrl: 'assets/pages/illustration.html',
+        controller: 'artCtrl',
+        controllerAs: 'art'
       })
       .when('/music', {
         templateUrl: 'assets/pages/music.html'

@@ -4,41 +4,13 @@
     <div class="illustration-section paintings-drawings col-md-12">
       <h3>Paintings/Drawings</h3>
       <div class="thumb-row 1">
-        <div class="art-thumb col-md-3"></div>
-        <div class="art-thumb col-md-3"></div>
-        <div class="art-thumb col-md-3"></div>
-        <div class="art-thumb edge col-md-3"></div>
-      </div>
-      <div class="thumb-row 2">
-        <div class="art-thumb col-md-3"></div>
-        <div class="art-thumb col-md-3"></div>
-        <div class="art-thumb col-md-3"></div>
-        <div class="art-thum edge col-md-3"></div>
+        <button ng-click="art.modalLoad()" class="art-thumb"></button>
+        <button ng-click="art.modalLoad()" class="art-thumb"></button>
+        <button ng-click="art.modalLoad()" class="art-thumb"></button>
+        <button ng-click="art.modalLoad()" class="art-thumb edge"></button>
       </div>
     </div>
-    <div class="illustration-section digital-illustration col-md-12">
-      <h3>Digital Illustration</h3>
-      <div class="thumb-row 3">
-        <div class="art-thumb col-md-3"></div>
-        <div class="art-thumb col-md-3"></div>
-        <div class="art-thumb col-md-3"></div>
-        <div class="art-thumb edge col-md-3"></div>
-      </div>
-      <div class="thumb-row 4">
-        <div class="art-thumb col-md-3"></div>
-        <div class="art-thumb col-md-3"></div>
-        <div class="art-thumb col-md-3"></div>
-        <div class="art-thumb edge col-md-3"></div>
-      </div>
-    </div>
-    <div class="illustration-section album-covers col-md-12">
-      <h3>Album Covers</h3>
-      <div class="thumb-row 5">
-        <div class="art-thumb col-md-3"></div>
-        <div class="art-thumb col-md-3"></div>
-        <div class="art-thumb col-md-3"></div>
-        <div class="art-thumb edge col-md-3"></div>
-      </div>
-    </div>
+    <div ng-include="'partials/paintingmodal.html'"></div>
+    
   </div>
 </div>

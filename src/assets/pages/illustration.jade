@@ -3,31 +3,36 @@
     .illustration-section.paintings-drawings.col-md-12
       h3 Paintings/Drawings
       .thumb-row.1
-        .art-thumb.col-md-3
-        .art-thumb.col-md-3
-        .art-thumb.col-md-3
-        .art-thumb.edge.col-md-3
-      .thumb-row.2
-        .art-thumb.col-md-3
-        .art-thumb.col-md-3
-        .art-thumb.col-md-3
-        .art-thum.edge.col-md-3
-    .illustration-section.digital-illustration.col-md-12
-      h3 Digital Illustration
-      .thumb-row.3
-        .art-thumb.col-md-3
-        .art-thumb.col-md-3
-        .art-thumb.col-md-3
-        .art-thumb.edge.col-md-3
-      .thumb-row.4
-        .art-thumb.col-md-3
-        .art-thumb.col-md-3
-        .art-thumb.col-md-3
-        .art-thumb.edge.col-md-3
-    .illustration-section.album-covers.col-md-12
-      h3 Album Covers
-      .thumb-row.5
-        .art-thumb.col-md-3
-        .art-thumb.col-md-3
-        .art-thumb.col-md-3
-        .art-thumb.edge.col-md-3
+        button.art-thumb(ng-click='art.modalLoad()')
+        button.art-thumb(ng-click='art.modalLoad()')
+        button.art-thumb(ng-click='art.modalLoad()')
+        button.art-thumb.edge(ng-click='art.modalLoad()')
+
+    div(ng-include="'partials/paintingmodal.html'")
+
+    //-   .thumb-row.2
+    //-     .art-thumb.col-md-3
+    //-     .art-thumb.col-md-3
+    //-     .art-thumb.col-md-3
+    //-     .art-thum.edge.col-md-3
+    //- .illustration-section.digital-illustration.col-md-12(ng-repeat="digital in illustration")
+    //-   h3 Digital Illustration
+    //-   .thumb-row.3
+    //-     .art-thumb.col-md-3
+    //-     .art-thumb.col-md-3
+    //-     .art-thumb.col-md-3
+    //-     .art-thumb.edge.col-md-3
+    //-   .thumb-row.4
+    //-     .art-thumb.col-md-3
+    //-     .art-thumb.col-md-3
+    //-     .art-thumb.col-md-3
+    //-     .art-thumb.edge.col-md-3
+    //- .illustration-section.album-covers.col-md-12(ng-repeat="covers in illustration")
+    //-   h3 Album Covers
+    //-   .thumb-row.5
+    //-     .art-thumb.col-md-3
+    //-     .art-thumb.col-md-3
+    //-     .art-thumb.col-md-3
+    //-     .art-thumb.edge.col-md-3
+
+
