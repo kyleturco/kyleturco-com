@@ -59,10 +59,18 @@ gulp.task('copy', function () {
     .pipe(gulp.dest('public'));
 });
 
+gulp.task('audio', function () {
+  gulp.src('src/**/*.mp3')
+    .pipe(gulp.dest('public'));
+});
 
+gulp.task('img', function () {
+  gulp.src('src/**/*.jpg', 'src/**/*.png')
+    .pipe(gulp.dest('public'));
+});
 
 // gulp.task('build:prod', ['jade:prod', 'sass:prod', 'js:prod', 'bower', 'copy']);
-gulp.task('build:dev', ['jade:dev', 'sass:dev', 'js:dev', 'bower', 'copy']);
+gulp.task('build:dev', ['jade:dev', 'sass:dev', 'js:dev', 'bower', 'copy', 'audio', 'img']);
 
 gulp.task('serve', ['build:dev'], function () {
   gulp.start('browser-sync');
