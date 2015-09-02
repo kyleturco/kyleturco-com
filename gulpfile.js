@@ -65,7 +65,7 @@ gulp.task('audio', function () {
 });
 
 gulp.task('img', function () {
-  gulp.src('src/**/*.jpg', 'src/**/*.png')
+  gulp.src('src/**/*.jpg')
     .pipe(gulp.dest('public'));
 });
 
