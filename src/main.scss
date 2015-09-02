@@ -233,6 +233,9 @@ p.hero-text {
     padding-left: 0px;
     padding-right: 0px;
   }
+  .container {
+    max-width: 65%;
+  }
 }
 
 .container {
@@ -243,7 +246,7 @@ p.hero-text {
 }
 
 .audio-section {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .music-clip, .music-video {
@@ -259,12 +262,25 @@ p.hero-text {
 }
 
 .youtube-clips {
-  padding-top: 35px;
+  padding-top: 55px;
+  border-top: 1px solid #dedede;
 }
 
 iframe {
   width: 100%;
   height: 358px;
+}
+
+.album-thumb {
+  background: url("http://f1.bcbits.com/img/a2830015837_16.jpg") no-repeat;
+  background-size: 210px 210px;
+  display: block;
+  width: 210px;
+  height: 210px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  float: left;
+  margin-top: 12px;
 }
 
 // Illustration Page

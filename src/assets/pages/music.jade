@@ -1,23 +1,21 @@
 .music-background
   .container
-    .music-section.col-md-12
-      .blank.col-md-1
-      .content.col-md-10
-        .audio-section
-          .music-clip
-            h4.song-title Stompin' at the Savoy
-            p Listen Now!
-          .music-clip
-            h4.song-title Mean to Me
-            p Listen Now!
-          .music-clip
-            h4.song-title Darn That Dream
-            p Listen Now!
-        hr
-        .youtube-clips
-          .music-video.1
-            iframe(src="https://www.youtube.com/embed/t0qPa7Ch4h0" frameborder="0" allowfullscreen)
-          .music-video.2
-            iframe(src="https://www.youtube.com/embed/mT0s5nZeJ5s" frameborder="0" allowfullscreen)
-      .blank.col-md-1
-
+    .music-section
+      .album-thumb.col-md-4
+      .audio-section.col-md-8
+        .music-clip
+          h4.song-title Stompin' at the Savoy
+          p Listen Now!
+          audio(src="assets/audio/stompin-at-the-savoy.mp3" preload="auto")
+        .music-clip
+          h4.song-title Mean to Me
+          p Listen Now!
+        .music-clip
+          h4.song-title Darn That Dream
+          p Listen Now!
+    div(class="clearfix")
+    .youtube-clips
+      .music-video.1
+        iframe(src="https://www.youtube.com/embed/t0qPa7Ch4h0" frameborder="0" allowfullscreen)
+      .music-video.2
+        iframe(src="https://www.youtube.com/embed/mT0s5nZeJ5s" frameborder="0" allowfullscreen)
