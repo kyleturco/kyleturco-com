@@ -2,9 +2,10 @@
 <div id="artModal" tabindex="-1" role="dialog" aria-labelledby="artModal" class="modal fade">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-body">
-        <h3>Hello out there!</h3>
-        <p>Testing testing!!!!!</p>
+      <div ng-repeat="painting in art.paintings" class="modal-body">
+        <h3>{{painting.title}}</h3>
+        <p>{{painting.medium}}</p>
+        <p>{{painting.notes}}</p>
       </div>
     </div>
   </div>

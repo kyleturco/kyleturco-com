@@ -11,13 +11,11 @@ angular.module('kyleTurco').controller('artCtrl', function ($scope) {
     });
   };
 
-  // main.paintings = [
-  //     {
-  //         id: 'one',
-  //         title: 'Italy Street',
-  //         medium: 'Pen & Ink',
-  //         notes: 'Drawn from a photo',
-  //         url: 'assets/img/elephant-january-2012.jpg'
-  //     }
-  // ];
+  main.paintings = [{
+    id: 'one',
+    title: 'Italy Street',
+    medium: 'Pen & Ink',
+    notes: 'Drawn from a photo',
+    url: 'assets/img/italy-street-2012.jpg'
+  }];
 });
