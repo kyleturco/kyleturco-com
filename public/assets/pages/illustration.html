@@ -3,14 +3,24 @@
   <div class="container">
     <div class="illustration-section paintings-drawings col-md-12">
       <h3>Paintings/Drawings</h3>
-      <div class="thumb-row 1">
-        <button ng-click="art.modalLoad()" class="art-thumb"></button>
-        <button ng-click="art.modalLoad()" class="art-thumb"></button>
-        <button ng-click="art.modalLoad()" class="art-thumb"></button>
-        <button ng-click="art.modalLoad()" class="art-thumb edge"></button>
+      <div class="paintings-section">
+        <div class="thumb-row">
+          <button ng-click="art.modalLoad()" ng-repeat="painting in art.paintings" class="art-thumb"><img src="{{painting.url}}" class="art-thumb"/>
+            <div id="artModal" tabindex="-1" role="dialog" aria-labelledby="artModal" class="modal fade">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body"><img src="{{painting.url}}" class="art-large"/>
+                    <h3>{{painting.title}}</h3>
+                    <p>{{painting.medium}}</p>
+                    <p>{{painting.notes}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </button>
+        </div>
       </div>
     </div>
-    <div ng-include="'partials/paintingmodal.html'"></div>
     
   </div>
 </div>

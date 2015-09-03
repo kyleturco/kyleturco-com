@@ -2,13 +2,21 @@
   .container
     .illustration-section.paintings-drawings.col-md-12
       h3 Paintings/Drawings
-      .thumb-row.1
-        button.art-thumb(ng-click='art.modalLoad()')
-        button.art-thumb(ng-click='art.modalLoad()')
-        button.art-thumb(ng-click='art.modalLoad()')
-        button.art-thumb.edge(ng-click='art.modalLoad()')
+      .paintings-section
+        .thumb-row
+          button.art-thumb(ng-click='art.modalLoad()' ng-repeat='painting in art.paintings')
+            img.art-thumb(src="{{painting.url}}")
 
-    div(ng-include="'partials/paintingmodal.html'")
+            .modal.fade(id="artModal" tabindex="-1" role="dialog" aria-labelledby="artModal")
+              .modal-dialog
+                .modal-content
+                  .modal-body
+                    img.art-large(src="{{painting.url}}")
+                    h3 {{painting.title}}
+                    p {{painting.medium}}
+                    p {{painting.notes}}
+
+    //- div(ng-include="'partials/paintingmodal.html'")
 
     //-   .thumb-row.2
     //-     .art-thumb.col-md-3
