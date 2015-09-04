@@ -231,6 +231,10 @@ iframe {
   overflow: hidden; }
   .art-thumb img {
     width: 210px; }
+  .art-thumb .landscape {
+    height: 210px;
+    width: auto;
+    margin-left: -35px; }
 
 .art-large {
   width: 420px; }

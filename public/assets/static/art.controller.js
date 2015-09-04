@@ -82,9 +82,9 @@ angular.module('kyleTurco').controller('artCtrl', function ($scope) {
         url: 'assets/img/sam-allen-toothbrush-ep.jpg'
     }];
 
-    main.modalLoad = function (paintingId) {
-        main.paintings.forEach(function (painting) {
-            if (painting.id === paintingId) {
+    main.modalLoad = function (id, group) {
+        main[group].forEach(function (painting) {
+            if (painting.id === id) {
                 main.current = painting;
             };
         });

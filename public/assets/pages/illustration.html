@@ -5,7 +5,7 @@
       <h3>Paintings/Drawings</h3>
       <div class="paintings-section">
         <div class="thumb-row">
-          <div ng-click="art.modalLoad(painting.id)" ng-repeat="painting in art.paintings" class="art-thumb"><img src="{{painting.url}}"/></div>
+          <div ng-click="art.modalLoad(painting.id, &quot;paintings&quot;)" ng-repeat="painting in art.paintings" class="art-thumb"><img src="{{painting.url}}"/></div>
           <div ng-include="'partials/paintingmodal.html'"></div>
         </div>
       </div>
@@ -14,7 +14,7 @@
       <h3>Digital Imagery</h3>
       <div class="covers-section">
         <div class="thumb-row">
-          <div ng-click="art.modalLoad()" ng-repeat="digital in art.digitals" class="art-thumb"><img src="{{digital.url}}"/></div>
+          <div ng-click="art.modalLoad(digital.id, &quot;digitals&quot;)" ng-repeat="digital in art.digitals" class="art-thumb"><img src="{{digital.url}}" class="landscape"/></div>
           <div ng-include="'partials/digitalmodal.html'"></div>
         </div>
       </div>
@@ -23,7 +23,7 @@
       <h3>Album Covers</h3>
       <div class="covers-section">
         <div class="thumb-row">
-          <div ng-click="art.modalLoad()" ng-repeat="cover in art.covers" class="art-thumb"><img src="{{cover.url}}"/></div>
+          <div ng-click="art.modalLoad(cover.id, &quot;covers&quot;)" ng-repeat="cover in art.covers" class="art-thumb"><img src="{{cover.url}}"/></div>
           <div ng-include="'partials/covermodal.html'"></div>
         </div>
       </div>

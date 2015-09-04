@@ -5,9 +5,9 @@
         button.close(data-dismiss="modal")
           span &times;
       .modal-body
-        img.art-large(src="{{digital.url}}")
-        h3 {{digital.title}}
-        p {{digital.medium}}
-        p {{digital.notes}}
+        img.art-large(src="{{art.current.url}}")
+        h3 {{art.current.title}}
+        p {{art.current.medium}}
+        p {{art.current.notes}}
       .modal-footer
         button.btn.btn-primary(data-dismiss="modal") Cancel

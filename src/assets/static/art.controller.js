@@ -97,9 +97,9 @@ angular
         }
     ];
 
-    main.modalLoad = function (paintingId) {
-      main.paintings.forEach(function (painting) {
-        if (painting.id === paintingId) {
+    main.modalLoad = function (id, group) {
+      main[group].forEach(function (painting) {
+        if (painting.id === id) {
           main.current = painting;
         };
       })
