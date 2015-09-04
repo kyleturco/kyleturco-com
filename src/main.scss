@@ -284,16 +284,6 @@ iframe {
 }
 
 // Illustration Page
-.illustration-background {
-  .col-md-12 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-}
-
-.thumb-row {
-  width: 100%;
-}
 
 .art-thumb {
   // background: url("http://i58.tinypic.com/2w5ke0x.jpg") no-repeat;
@@ -313,14 +303,44 @@ iframe {
     height: 210px;
     width: auto;
     margin-left: -35px;
+    margin-bottom: 45px;
   }
 }
 
 .art-large {
   width: 420px;
+  img {
+    width: 420px
+  }
 }
 
+.thumb-row {
+  margin-top: 10px;
+}
 
-.edge {
-  margin-right: 0px;
+// Modal Styles
+
+.modal-dialog {
+  width: 770px;
+}
+
+.modal-content {
+  border-radius: 0px;
+}
+
+.modal-body {
+  margin-bottom: 20px;
+  .container {
+    max-width: 750px;
+  }
+  .col-md-4 {
+    padding-left: 0px;
+  }
+}
+
+.modal-header {
+  .close {
+    margin-top: -12px;
+    margin-right: -6px;
+  }
 }

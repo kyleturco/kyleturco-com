@@ -213,13 +213,6 @@ iframe {
   float: left;
   margin-top: 12px; }
 
-.illustration-background .col-md-12 {
-  padding-left: 0px;
-  padding-right: 0px; }
-
-.thumb-row {
-  width: 100%; }
-
 .art-thumb {
   display: block;
   width: 210px;
@@ -234,10 +227,30 @@ iframe {
   .art-thumb .landscape {
     height: 210px;
     width: auto;
-    margin-left: -35px; }
+    margin-left: -35px;
+    margin-bottom: 45px; }
 
 .art-large {
   width: 420px; }
+  .art-large img {
+    width: 420px; }
 
-.edge {
-  margin-right: 0px; }
+.thumb-row {
+  margin-top: 10px; }
+
+.modal-dialog {
+  width: 770px; }
+
+.modal-content {
+  border-radius: 0px; }
+
+.modal-body {
+  margin-bottom: 20px; }
+  .modal-body .container {
+    max-width: 750px; }
+  .modal-body .col-md-4 {
+    padding-left: 0px; }
+
+.modal-header .close {
+  margin-top: -12px;
+  margin-right: -6px; }
