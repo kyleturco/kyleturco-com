@@ -4,8 +4,6 @@ angular
     $routeProvider
       .when('/', {
         templateUrl: 'assets/pages/landing.html',
-        // controller: 'ButtonController',
-        // controllerAs: 'button'
       })
       .when('/web', {
         templateUrl: 'assets/pages/web.html'

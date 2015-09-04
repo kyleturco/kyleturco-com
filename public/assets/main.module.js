@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('kyleTurco', ['ngRoute']);
+angular.module('kyleTurco', ['ngRoute', 'ui.bootstrap']);
