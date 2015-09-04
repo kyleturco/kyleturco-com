@@ -5,22 +5,28 @@
       <h3>Paintings/Drawings</h3>
       <div class="paintings-section">
         <div class="thumb-row">
-          <button ng-click="art.modalLoad()" ng-repeat="painting in art.paintings" class="art-thumb"><img src="{{painting.url}}" class="art-thumb"/>
-            <div id="artModal" tabindex="-1" role="dialog" aria-labelledby="artModal" class="modal fade">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-body"><img src="{{painting.url}}" class="art-large"/>
-                    <h3>{{painting.title}}</h3>
-                    <p>{{painting.medium}}</p>
-                    <p>{{painting.notes}}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </button>
+          <div ng-click="art.modalLoad(painting.id)" ng-repeat="painting in art.paintings" class="art-thumb"><img src="{{painting.url}}"/></div>
+          <div ng-include="'partials/paintingmodal.html'"></div>
         </div>
       </div>
     </div>
-    
+    <div class="digital-section paintings-drawings col-md-12">
+      <h3>Digital Imagery</h3>
+      <div class="covers-section">
+        <div class="thumb-row">
+          <div ng-click="art.modalLoad()" ng-repeat="digital in art.digitals" class="art-thumb"><img src="{{digital.url}}"/></div>
+          <div ng-include="'partials/digitalmodal.html'"></div>
+        </div>
+      </div>
+    </div>
+    <div class="cover-section paintings-drawings col-md-12">
+      <h3>Album Covers</h3>
+      <div class="covers-section">
+        <div class="thumb-row">
+          <div ng-click="art.modalLoad()" ng-repeat="cover in art.covers" class="art-thumb"><img src="{{cover.url}}"/></div>
+          <div ng-include="'partials/covermodal.html'"></div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

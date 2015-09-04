@@ -4,43 +4,28 @@
       h3 Paintings/Drawings
       .paintings-section
         .thumb-row
-          button.art-thumb(ng-click='art.modalLoad()' ng-repeat='painting in art.paintings')
-            img.art-thumb(src="{{painting.url}}")
+          .art-thumb(ng-click='art.modalLoad(painting.id)' ng-repeat='painting in art.paintings')
+            img(src="{{painting.url}}")
 
-            .modal.fade(id="artModal" tabindex="-1" role="dialog" aria-labelledby="artModal")
-              .modal-dialog
-                .modal-content
-                  .modal-body
-                    img.art-large(src="{{painting.url}}")
-                    h3 {{painting.title}}
-                    p {{painting.medium}}
-                    p {{painting.notes}}
+          div(ng-include="'partials/paintingmodal.html'")
 
-    //- div(ng-include="'partials/paintingmodal.html'")
+    .digital-section.paintings-drawings.col-md-12
+      h3 Digital Imagery
+      .covers-section
+        .thumb-row
+          .art-thumb(ng-click='art.modalLoad()' ng-repeat='digital in art.digitals')
+            img(src="{{digital.url}}")
 
-    //-   .thumb-row.2
-    //-     .art-thumb.col-md-3
-    //-     .art-thumb.col-md-3
-    //-     .art-thumb.col-md-3
-    //-     .art-thum.edge.col-md-3
-    //- .illustration-section.digital-illustration.col-md-12(ng-repeat="digital in illustration")
-    //-   h3 Digital Illustration
-    //-   .thumb-row.3
-    //-     .art-thumb.col-md-3
-    //-     .art-thumb.col-md-3
-    //-     .art-thumb.col-md-3
-    //-     .art-thumb.edge.col-md-3
-    //-   .thumb-row.4
-    //-     .art-thumb.col-md-3
-    //-     .art-thumb.col-md-3
-    //-     .art-thumb.col-md-3
-    //-     .art-thumb.edge.col-md-3
-    //- .illustration-section.album-covers.col-md-12(ng-repeat="covers in illustration")
-    //-   h3 Album Covers
-    //-   .thumb-row.5
-    //-     .art-thumb.col-md-3
-    //-     .art-thumb.col-md-3
-    //-     .art-thumb.col-md-3
-    //-     .art-thumb.edge.col-md-3
+          div(ng-include="'partials/digitalmodal.html'")
+
+
+    .cover-section.paintings-drawings.col-md-12
+      h3 Album Covers
+      .covers-section
+        .thumb-row
+          .art-thumb(ng-click='art.modalLoad()' ng-repeat='cover in art.covers')
+            img(src="{{cover.url}}")
+
+          div(ng-include="'partials/covermodal.html'")
 
 
