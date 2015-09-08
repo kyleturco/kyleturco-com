@@ -157,6 +157,9 @@ p.hero-text {
   margin-top: 25px;
   border: 1px solid #dedede; }
 
+.about-bio {
+  padding-right: 70px; }
+
 .web-background .container {
   padding-left: 0px; }
 
@@ -176,11 +179,13 @@ p.hero-text {
     width: 300px;
     border: 1px solid #dedede; }
 
-.web-project-1 {
+.web-project {
   border-bottom: 1px solid #dedede;
-  padding-bottom: 45px; }
-  .web-project-1 .bottom {
-    border-bottom: none; }
+  padding-bottom: 100px; }
+
+.bottom {
+  padding-top: 45px;
+  border-bottom: none; }
 
 .music-background .col-md-12 {
   padding-left: 0px;

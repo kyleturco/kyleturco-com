@@ -209,6 +209,10 @@ p.hero-text {
   border: 1px solid #dedede;
 }
 
+.about-bio {
+  padding-right: 70px;
+}
+
 //Web Styles
 .web-background {
   .container {
@@ -234,12 +238,14 @@ p.hero-text {
   }
 }
 
-.web-project-1 {
+.web-project {
   border-bottom: 1px solid #dedede;
-  padding-bottom: 45px;
-  .bottom {
-    border-bottom: none;
-  }
+  padding-bottom: 100px;
+}
+
+.bottom {
+  padding-top: 45px;
+  border-bottom: none;
 }
 
 //Music Page
