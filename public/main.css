@@ -23,6 +23,7 @@ p, li {
 
 .subheader {
   font-family: 'Karla', sans-serif;
+  color: #505050;
   font-size: 35px; }
 
 .subheader-white {
@@ -125,7 +126,6 @@ hr {
   border-top: 1px solid #dedede; }
 
 .hero-section {
-  background: url("http://i61.tinypic.com/2n8s9w.jpg") no-repeat;
   background-size: cover;
   padding: 150px 0 150px 0;
   margin-top: -20px; }
@@ -136,12 +136,12 @@ hr {
   text-align: center; }
 
 h1.hero-text {
-  color: #ffffff;
+  color: #1f1f1f;
   font-size: 42px;
   margin-bottom: 12px; }
 
 p.hero-text {
-  color: #ffffff;
+  color: #505050;
   font-size: 28px; }
 
 .about-background .container {
@@ -159,6 +159,10 @@ p.hero-text {
 
 .about-bio {
   padding-right: 70px; }
+
+.bio-section {
+  border-top: 1px solid #dedede;
+  padding-top: 50px; }
 
 .web-background .container {
   padding-left: 0px; }
