@@ -191,9 +191,6 @@ p.hero-text {
   padding-left: 0px;
   padding-right: 0px; }
 
-.music-background .container {
-  max-width: 65%; }
-
 .container .col-md-6 {
   padding-left: 0px;
   padding-right: 0px; }
@@ -211,12 +208,11 @@ p.hero-text {
   margin-bottom: 20px; }
 
 .youtube-clips {
-  padding-top: 55px;
-  border-top: 1px solid #dedede; }
+  padding-top: 25px; }
 
 iframe {
-  width: 100%;
-  height: 358px; }
+  width: 96%;
+  height: 310px; }
 
 .album-thumb {
   background: url("http://f1.bcbits.com/img/a2830015837_16.jpg") no-repeat;
@@ -270,3 +266,19 @@ iframe {
 .modal-header .close {
   margin-top: -12px;
   margin-right: -6px; }
+
+.contact-icon {
+  display: block;
+  float: left;
+  padding-right: 15px;
+  font-size: 30px;
+  margin-bottom: 12px; }
+  .contact-icon .twitter {
+    color: #55acee; }
+  .contact-icon .twitter:hover {
+    color: #303030; }
+  .contact-icon .github:hover {
+    color: #505050; }
+
+.social-media {
+  padding-top: 25px; }
