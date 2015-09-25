@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kyleturco/kyleturco-com.git"
+    "url": "git+https://github.com/kyleturco/kyleturco.github.io.git"
   },
   "author": "Kyle Turco <kyleturco@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kyleturco/kyleturco-com/issues"
+    "url": "https://github.com/kyleturco/kyleturco.github.io/issues"
   },
-  "homepage": "https://github.com/kyleturco/kyleturco-com#readme",
+  "homepage": "https://github.com/kyleturco/kyleturco.github.io#readme",
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-gh-pages": "^0.5.2"
