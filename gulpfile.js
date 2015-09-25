@@ -3,6 +3,15 @@ var gulp = require('gulp'),
       pattern: ['gulp-*', 'del', 'main-bower-files', 'browser-sync']
     });
 
+
+var ghPages = require('gulp-gh-pages');
+
+gulp.task('deploy', function() {
+  return gulp.src('public/**/*')
+    .pipe(ghPages());
+});
+
+
 gulp.task('clean', function (cb) {
   $.del('public', cb);
 });
@@ -40,11 +49,6 @@ gulp.task('js:dev', function () {
     .pipe($.babel())
     .pipe(gulp.dest('public'));
 });
-
-// gulp.task('img', function () {
-//   gulp.src('app/*.png')
-//     .pipe(gulp.dest('public/'));
-// });
 
 gulp.task('browser-sync', function() {
     $.browserSync.init({
