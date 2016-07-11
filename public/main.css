@@ -11,16 +11,6 @@ p, li {
   color: #676767;
   line-height: 27px; }
 
-.big-header {
-  font-family: 'Arimo', sans-serif;
-  color: #1f1f1f;
-  font-size: 45px; }
-
-.big-header-white {
-  font-family: 'Arimo', sans-serif;
-  color: #ffffff;
-  font-size: 45px; }
-
 .content-section {
   border-top: 1px solid #dedede;
   padding: 3em 0; }
@@ -28,7 +18,7 @@ p, li {
 .subheader {
   font-family: 'Karla', sans-serif;
   color: #505050;
-  font-size: 35px; }
+  font-size: 2em; }
 
 .subheader-white {
   font-family: 'Karla', sans-serif;
@@ -111,7 +101,7 @@ a:focus {
 .container {
   max-width: 1000px; }
 
-.button-main-blue {
+.btn-primary {
   font-family: 'Karla', sans-serif;
   text-transform: uppercase;
   background-color: #3d97d2;
@@ -128,19 +118,14 @@ hr {
   border-top: 1px solid #dedede; }
 
 .hero-section {
-  background-size: cover;
-  padding: 150px 0 150px 0;
-  margin-top: -20px; }
-
-.hero-text {
-  max-width: 650px;
-  margin: 0 auto;
-  text-align: center; }
-
-h1.hero-text {
-  color: #1f1f1f;
-  font-size: 42px;
-  margin-bottom: 12px; }
+  padding: 5em 0 7em; }
+  .hero-section .hero-text {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center; }
+    @media (min-width: 992px) {
+      .hero-section .hero-text {
+        max-width: 650px; } }
 
 p.hero-text {
   color: #505050;
@@ -155,15 +140,6 @@ p.hero-text {
   margin-top: 25px;
   border: 1px solid #dedede; }
 
-.web-background .container {
-  padding-left: 0px; }
-
-.web-background .col-md-4 {
-  padding-left: 0px; }
-
-.web-background .col-md-12 {
-  padding-left: 0px; }
-
 .web-screenshot {
   background-size: 300px 245px;
   display: block;
@@ -176,11 +152,7 @@ p.hero-text {
 
 .web-project {
   border-bottom: 1px solid #dedede;
-  padding-bottom: 100px; }
-
-.bottom {
-  padding-top: 45px;
-  border-bottom: none; }
+  padding: 4em 0; }
 
 .music-background .col-md-12 {
   padding-left: 0px;

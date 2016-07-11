@@ -19,7 +19,6 @@ angular
       .when('/contact', {
         templateUrl: 'assets/pages/contact.html'
       })
-
       .otherwise({
         templateUrl: 'assets/static/404.html'
       });

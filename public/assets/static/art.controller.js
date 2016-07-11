@@ -1,9 +1,8 @@
 'use strict';
 
 angular.module('kyleTurco').controller('artCtrl', function ($scope) {
-
     var main = this;
-
+    var $artModal = $('#artModal');
     main.paintings = [{
         id: 'one',
         title: 'Italy Street',
@@ -55,7 +54,6 @@ angular.module('kyleTurco').controller('artCtrl', function ($scope) {
         notes: 'Created for TechnologyAdvice.com',
         url: 'assets/img/digital-marathon-runner.png'
     }];
-
     main.covers = [{
         id: 'one',
         title: 'Weight of the World - Cover',
@@ -81,20 +79,18 @@ angular.module('kyleTurco').controller('artCtrl', function ($scope) {
         notes: 'Created for Sam Allen',
         url: 'assets/img/sam-allen-toothbrush-ep.jpg'
     }];
-
     main.modalLoad = function (id, group) {
         main[group].forEach(function (painting) {
             if (painting.id === id) {
                 main.current = painting;
-            };
+            }
         });
-        $('#artModal').modal('show');
-        $('#artModal').on('hidden.bs.modal', function (e) {
+        $artModal.modal('show');
+        $artModal.on('hidden.bs.modal', function (e) {
             $scope.$apply();
         });
     };
-
     main.modalHide = function () {
-        $('#artModal').modal('hide');
+        $artModal.modal('hide');
     };
 });

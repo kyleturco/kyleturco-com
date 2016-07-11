@@ -1,3 +1,5 @@
+$screen-md-min: 992px;
+
 h1, h2, h3, h4 {
   font-family: 'Arimo', sans-serif;
   color: #1f1f1f;
@@ -14,18 +16,6 @@ p, li {
   line-height: 27px;
 }
 
-.big-header {
-  font-family: 'Arimo', sans-serif;
-  color: #1f1f1f;
-  font-size: 45px;
-}
-
-.big-header-white {
-  font-family: 'Arimo', sans-serif;
-  color: #ffffff;
-  font-size: 45px;
-}
-
 .content-section {
   border-top: 1px solid #dedede;
   padding: 3em 0;
@@ -34,7 +24,7 @@ p, li {
 .subheader {
   font-family: 'Karla', sans-serif;
   color: #505050;
-  font-size: 35px;
+  font-size: 2em;
 }
 
 .subheader-white {
@@ -150,7 +140,7 @@ a:focus {
 }
 
 //Button Styles
-.button-main-blue {
+.btn-primary {
   font-family: 'Karla', sans-serif;
   text-transform: uppercase;
   background-color: #3d97d2;
@@ -171,23 +161,17 @@ hr {
 //Homepage styles
 
 //Hero Section
+
 .hero-section {
-  // background: url("http://i61.tinypic.com/2n8s9w.jpg") no-repeat;
-  background-size: cover;
-  padding: 150px 0 150px 0;
-  margin-top: -20px;
-}
-
-.hero-text {
-  max-width: 650px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-h1.hero-text {
-  color: #1f1f1f;
-  font-size: 42px;
-  margin-bottom: 12px;
+  padding: 5em 0 7em;
+  .hero-text {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    @media (min-width: $screen-md-min) {
+      max-width: 650px;
+    }
+  }
 }
 
 p.hero-text {
@@ -206,18 +190,6 @@ p.hero-text {
   border: 1px solid #dedede;
 }
 
-//Web Styles
-.web-background {
-  .container {
-    padding-left: 0px;
-  }
-  .col-md-4 {
-    padding-left: 0px;
-  }
-  .col-md-12 {
-    padding-left: 0px;
-  }
-}
 .web-screenshot {
   // background: url("http://i58.tinypic.com/2w5ke0x.jpg") no-repeat;
   background-size: 300px 245px;
@@ -233,12 +205,7 @@ p.hero-text {
 
 .web-project {
   border-bottom: 1px solid #dedede;
-  padding-bottom: 100px;
-}
-
-.bottom {
-  padding-top: 45px;
-  border-bottom: none;
+  padding: 4em 0;
 }
 
 //Music Page
