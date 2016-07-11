@@ -26,8 +26,7 @@ p, li {
   color: #ffffff; }
 
 a:hover, a:visited, a:active, a:focus {
-  text-decoration: none;
-  color: inherit; }
+  text-decoration: none; }
 
 a:focus {
   color: #3d97d2; }
@@ -154,26 +153,6 @@ p.hero-text {
   border-bottom: 1px solid #dedede;
   padding: 4em 0; }
 
-.music-background .col-md-12 {
-  padding-left: 0px;
-  padding-right: 0px; }
-
-.container .col-md-6 {
-  padding-left: 0px;
-  padding-right: 0px; }
-
-.audio-section {
-  margin-bottom: 20px; }
-
-.music-clip, .music-video {
-  margin-bottom: 35px; }
-
-.song-title {
-  margin-bottom: 0px; }
-
-.song-description {
-  margin-bottom: 20px; }
-
 .youtube-clips {
   padding-top: 25px; }
 
@@ -181,33 +160,13 @@ iframe {
   width: 96%;
   height: 310px; }
 
-.album-thumb {
-  background: url("http://f1.bcbits.com/img/a2830015837_16.jpg") no-repeat;
-  background-size: 210px 210px;
-  display: block;
-  width: 210px;
-  height: 210px;
-  margin-right: 40px;
-  margin-bottom: 40px;
-  float: left;
-  margin-top: 12px; }
-
 .art-thumb {
-  display: block;
-  width: 210px;
-  height: 210px;
-  border: 1px solid #dedede;
-  margin-right: 40px;
-  margin-bottom: 40px;
-  float: left;
-  overflow: hidden; }
+  float: left; }
   .art-thumb img {
-    width: 210px; }
-  .art-thumb .landscape {
-    height: 210px;
-    width: auto;
-    margin-left: -35px;
-    margin-bottom: 45px; }
+    width: 100%;
+    display: block;
+    border: 1px solid #dedede;
+    width: 5em; }
 
 .art-large {
   width: 420px; }
@@ -215,7 +174,7 @@ iframe {
     width: 420px; }
 
 .thumb-row {
-  margin-top: 10px; }
+  margin-top: 1em; }
 
 .modal-dialog {
   width: 770px; }
@@ -246,6 +205,3 @@ iframe {
     color: #303030; }
   .contact-icon .github:hover {
     color: #505050; }
-
-.social-media {
-  padding-top: 25px; }
