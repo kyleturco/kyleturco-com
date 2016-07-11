@@ -36,6 +36,11 @@ gulp.task('jade:dev', function () {
     .pipe(gulp.dest('public'));
 });
 
+gulp.task('html', function () {
+  gulp.src('src/**/*.html')
+  .pipe(gulp.dest('public'));
+});
+
 gulp.task('sass:dev', function () {
   gulp
     .src('src/**/main.scss')
@@ -79,7 +84,7 @@ gulp.task('img-png', function () {
 });
 
 // gulp.task('build:prod', ['jade:prod', 'sass:prod', 'js:prod', 'bower', 'copy']);
-gulp.task('build:dev', ['jade:dev', 'sass:dev', 'js:dev', 'bower', 'copy', 'audio', 'img', 'img-png']);
+gulp.task('build:dev', ['jade:dev', 'sass:dev', 'html', 'js:dev', 'bower', 'copy', 'audio', 'img', 'img-png']);
 
 gulp.task('serve', ['build:dev'], function () {
   gulp.start('browser-sync');
