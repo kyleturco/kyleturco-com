@@ -26,6 +26,11 @@ p, li {
   font-size: 45px;
 }
 
+.content-section {
+  border-top: 1px solid #dedede;
+  padding: 3em 0;
+}
+
 .subheader {
   font-family: 'Karla', sans-serif;
   color: #505050;
@@ -191,31 +196,14 @@ p.hero-text {
 }
 
 //About Styles
-.about-background {
-  .container {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-}
-
 .about-photo {
   background: url("http://i59.tinypic.com/30igdc6.png") no-repeat;
-  background-size: 210px 245px;
+  background-size: cover;
   display: block;
   width: 210px;
   height: 245px;
   margin-top: 25px;
   border: 1px solid #dedede;
-}
-
-.about-bio {
-  padding-right: 70px;
-}
-
-.bio-section {
-    border-top: 1px solid #dedede;
-    padding-top: 50px;
-
 }
 
 //Web Styles
