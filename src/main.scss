@@ -1,3 +1,4 @@
+$screen-sm-min: 768px;
 $screen-md-min: 992px;
 
 h1, h2, h3, h4 {
@@ -18,7 +19,7 @@ p, li {
 
 .content-section {
   border-top: 1px solid #dedede;
-  padding: 3em 0;
+  padding: 4em 0;
 }
 
 .subheader {
@@ -57,6 +58,9 @@ a:focus {
   .navbar-toggle {
     border: none;
   }
+}
+.navbar-default .navbar-collapse {
+  border: none;
 }
 .navbar-default .navbar-nav>li>a {
   font-family: 'Karla';
@@ -164,31 +168,33 @@ hr {
   }
   .hero-text {
     margin: 0 auto;
+    font-size: 2em;
 
     @media (min-width: $screen-md-min) {
+      font-size: 3em;
       max-width: 650px;
     }
   }
 }
 
-p.hero-text {
-  color: #505050;
-  font-size: 28px;
+//About Styles
+.about-bio {
+  h3 {
+    margin-top: 0;
+  }
 }
 
-//About Styles
-.about-photo {
-  background: url("http://i59.tinypic.com/30igdc6.png") no-repeat;
-  background-size: cover;
-  display: block;
-  width: 210px;
-  height: 245px;
-  margin-top: 25px;
-  border: 1px solid #dedede;
+.about-background {
+  .content-section {
+    border-top: none;
+
+    @media (min-width: $screen-sm-min) {
+      border-top: 1px solid #dedede;
+    }
+  }
 }
 
 .web-screenshot {
-  // background: url("http://i58.tinypic.com/2w5ke0x.jpg") no-repeat;
   background-size: 300px 245px;
   display: block;
   width: 300px;

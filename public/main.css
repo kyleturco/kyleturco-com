@@ -13,7 +13,7 @@ p, li {
 
 .content-section {
   border-top: 1px solid #dedede;
-  padding: 3em 0; }
+  padding: 4em 0; }
 
 .subheader {
   font-family: 'Karla', sans-serif;
@@ -40,6 +40,9 @@ a:focus {
     border-bottom: 1px solid #dedede; }
 
 .navbar-default .navbar-toggle {
+  border: none; }
+
+.navbar-default .navbar-collapse {
   border: none; }
 
 .navbar-default .navbar-nav > li > a {
@@ -121,23 +124,21 @@ hr {
     .hero-section {
       padding: 7em 0 9em; } }
   .hero-section .hero-text {
-    margin: 0 auto; }
+    margin: 0 auto;
+    font-size: 2em; }
     @media (min-width: 992px) {
       .hero-section .hero-text {
+        font-size: 3em;
         max-width: 650px; } }
 
-p.hero-text {
-  color: #505050;
-  font-size: 28px; }
+.about-bio h3 {
+  margin-top: 0; }
 
-.about-photo {
-  background: url("http://i59.tinypic.com/30igdc6.png") no-repeat;
-  background-size: cover;
-  display: block;
-  width: 210px;
-  height: 245px;
-  margin-top: 25px;
-  border: 1px solid #dedede; }
+.about-background .content-section {
+  border-top: none; }
+  @media (min-width: 768px) {
+    .about-background .content-section {
+      border-top: 1px solid #dedede; } }
 
 .web-screenshot {
   background-size: 300px 245px;
