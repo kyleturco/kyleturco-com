@@ -71,11 +71,10 @@ a:focus {
   color: inherit; }
 
 .footer {
-  bottom: 0;
   width: 100%;
   padding-top: 20px;
   background-color: #ffffff; }
-  .footer .container {
+  .footer-main {
     border-top: 1px solid #dedede; }
   .footer p {
     padding-top: 20px;
@@ -144,15 +143,22 @@ hr {
   background-size: 300px 245px;
   display: block;
   width: 300px;
-  height: 225px;
+  height: auto;
   margin-top: 25px; }
   .web-screenshot img {
-    width: 300px;
+    width: 100%;
     border: 1px solid #dedede; }
 
 .web-project {
-  border-bottom: 1px solid #dedede;
-  padding: 4em 0; }
+  border-bottom: 1px solid #dedede; }
+
+.web-project,
+.web-project-bottom {
+  padding: 1.5em 0; }
+  @media (min-width: 992px) {
+    .web-project,
+    .web-project-bottom {
+      padding: 4em 0; } }
 
 .youtube-clips {
   padding-top: 25px; }

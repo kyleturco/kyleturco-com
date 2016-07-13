@@ -94,12 +94,10 @@ a:focus {
 
 // Footer Styles
 .footer {
-  // position: absolute;
-  bottom: 0;
   width: 100%;
   padding-top: 20px;
   background-color: #ffffff;
-  .container {
+  &-main {
     border-top: 1px solid #dedede;
   }
   p {
@@ -198,17 +196,24 @@ hr {
   background-size: 300px 245px;
   display: block;
   width: 300px;
-  height: 225px;
+  height: auto;
   margin-top: 25px;
   img {
-    width: 300px;
+    width: 100%;
     border: 1px solid #dedede;
   }
 }
 
 .web-project {
   border-bottom: 1px solid #dedede;
-  padding: 4em 0;
+}
+
+.web-project,
+.web-project-bottom {
+  padding: 1.5em 0;
+  @media (min-width: $screen-md-min) {
+    padding: 4em 0;
+  }
 }
 
 //Music Page
