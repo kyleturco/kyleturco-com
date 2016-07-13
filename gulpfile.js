@@ -82,12 +82,11 @@ gulp.task('img-png', function () {
 });
 
 // gulp.task('build:prod', ['jade:prod', 'sass:prod', 'js:prod', 'bower', 'copy']);
-gulp.task('build:dev', ['jade:dev', 'sass:dev', 'html', 'html-pages', 'html-partials', 'js:dev', 'bower', 'copy', 'audio', 'img', 'img-png']);
+gulp.task('build:dev', ['jade:dev', 'sass:dev', 'html', 'html-pages', 'js:dev', 'bower', 'copy', 'audio', 'img', 'img-png']);
 
 gulp.task('serve', ['build:dev'], function () {
   gulp.start('browser-sync');
-  gulp.watch(['src/**/*.jade'], ['jade:dev'],['clean']).on('change', $.browserSync.reload);
-  gulp.watch(['src/**/*.html'], ['html'],['clean']).on('change', $.browserSync.reload);
+  gulp.watch(['src/**/*.html'], ['html-pages'],['clean']).on('change', $.browserSync.reload);
   gulp.watch(['src/**/*.scss'], ['sass:dev']).on('change', $.browserSync.reload);
   gulp.watch(['src/**/*.js'], ['js:dev']).on('change', $.browserSync.reload);
  // gulp.watch(['src/**/*', '!src/**/*.jade', '!src/**/*.scss', '!src/**/*.js'], ['build:dev']).on('change', $.browserSync.reload);

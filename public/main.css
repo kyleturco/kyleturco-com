@@ -163,33 +163,68 @@ iframe {
 
 .art-thumb {
   float: left; }
+  @media (min-width: 768px) {
+    .art-thumb {
+      padding: 0 2em 0 0; } }
   .art-thumb img {
     cursor: pointer;
-    width: 100%;
     display: block;
     border: 1px solid #dedede;
-    max-height: 18em; }
-
-.art-large {
-  width: 420px; }
-  .art-large img {
-    width: 420px; }
+    height: 65%;
+    width: 65%;
+    margin: 0 auto 1.5em;
+    transition: 0.2s; }
+    .art-thumb img:hover {
+      border: 1px solid #3d97d2; }
+    @media (min-width: 768px) {
+      .art-thumb img {
+        max-height: 13em;
+        width: 100%; } }
+    @media (min-width: 992px) {
+      .art-thumb img {
+        max-height: 18em; } }
 
 .thumb-row {
-  margin-top: 1em; }
+  margin: 1em 0 3em 0; }
 
 .modal-dialog {
-  width: 770px; }
+  width: 100%; }
+  @media (min-width: 992px) {
+    .modal-dialog {
+      width: 450px; } }
+
+.modal-header {
+  border: none; }
 
 .modal-content {
-  border-radius: 0; }
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  border: none; }
+
+.modal-backdrop {
+  opacity: 0.9 !important; }
 
 .modal-body {
   margin-bottom: 20px; }
-  .modal-body .container {
-    max-width: 750px; }
-  .modal-body .col-md-4 {
-    padding-left: 0; }
+
+.art-large {
+  width: 100%; }
+  .art-large img {
+    width: 100%; }
+
+.close {
+  opacity: 1;
+  text-shadow: none;
+  color: #dedede; }
+
+.modal-text h3, .modal-text p {
+  color: #fff; }
+
+.modal-text .medium,
+.modal-text .notes {
+  margin: 0;
+  opacity: 0.8; }
 
 .modal-header .close {
   margin-top: -12px;

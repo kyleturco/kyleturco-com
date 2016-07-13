@@ -3,7 +3,7 @@
     <h3 class="art-header">Paintings/Drawings</h3>
     <div class="thumb-row row clearfix">
       <div
-        class="col-md-3 art-thumb"
+        class="col-sm-3 art-thumb"
         ng-click="art.modalLoad(painting.id, 'paintings')"
         ng-repeat="painting in art.paintings"
       >
@@ -15,7 +15,7 @@
     <h3>Digital Imagery</h3>
     <div class="thumb-row row clearfix">
       <div
-        class="col-md-3 art-thumb"
+        class="col-sm-3 art-thumb"
         ng-click="art.modalLoad(digital.id, 'digitals')"
         ng-repeat="digital in art.digitals"
       >
@@ -27,7 +27,7 @@
     <h3>Album Covers</h3>
     <div class="thumb-row row clearfix">
       <div
-        class="col-md-3 art-thumb"
+        class="col-sm-3 art-thumb"
         ng-click="art.modalLoad(cover.id, 'covers')"
         ng-repeat="cover in art.covers"
       >
@@ -43,15 +43,13 @@
         <button data-dismiss="modal" class="close"><span>&times;</span></button>
       </div>
       <div class="modal-body">
-        <div class="container">
-          <div class="modal-img col-md-7">
-            <div class="art-large"><img src="{{art.current.url}}"/></div>
-          </div>
-          <div class="modal-text col-md-5">
-            <h3>{{art.current.title}}</h3>
-            <p class="medium">{{art.current.medium}}</p>
-            <p class="notes">{{art.current.notes}}</p>
-          </div>
+        <div class="modal-img">
+          <div class="art-large"><img src="{{art.current.url}}"/></div>
+        </div>
+        <div class="modal-text text-center">
+          <h3>{{art.current.title}}</h3>
+          <p class="medium">{{art.current.medium}}</p>
+          <p class="notes">{{art.current.notes}}</p>
         </div>
       </div>
     </div>

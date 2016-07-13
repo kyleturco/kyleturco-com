@@ -225,43 +225,82 @@ iframe {
 // Illustration Page
 .art-thumb {
   float: left;
+  @media (min-width: $screen-sm-min) {
+    padding: 0 2em 0 0;
+  }
   img {
     cursor: pointer;
-    width: 100%;
     display: block;
     border: 1px solid #dedede;
-    max-height: 18em;
-  }
-}
-
-.art-large {
-  width: 420px;
-  img {
-    width: 420px
+    height: 65%;
+    width: 65%;
+    margin: 0 auto 1.5em;
+    transition: 0.2s;
+    &:hover {
+      border: 1px solid #3d97d2;
+    }
+    @media (min-width: $screen-sm-min) {
+      max-height: 13em;
+      width: 100%;
+    }
+    @media (min-width: $screen-md-min) {
+      max-height: 18em;
+    }
   }
 }
 
 .thumb-row {
-  margin-top: 1em;
+  margin: 1em 0 3em 0;
 }
 
 // Modal Styles
-
 .modal-dialog {
-  width: 770px;
+  width: 100%;
+  @media (min-width: $screen-md-min) {
+    width: 450px;
+  }
+}
+
+.modal-header {
+  border: none;
 }
 
 .modal-content {
   border-radius: 0;
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+
+.modal-backdrop {
+  opacity: 0.9 !important;
 }
 
 .modal-body {
   margin-bottom: 20px;
-  .container {
-    max-width: 750px;
+}
+
+.art-large {
+  width: 100%;
+  img {
+    width: 100%;
   }
-  .col-md-4 {
-    padding-left: 0;
+}
+
+.close {
+  opacity: 1;
+  text-shadow: none;
+  color: #dedede;
+}
+
+.modal-text {
+  h3, p {
+    color: #fff;
+  }
+  .medium,
+  .notes {
+    margin: 0;
+    opacity: 0.8;
   }
 }
 
