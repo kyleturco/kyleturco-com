@@ -47,8 +47,8 @@ a:focus {
 //Header Styles
 .navbar {
   background-color: #ffffff;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding: 0.75em 0;
+  border-radius: 0;
   &-default {
     border: none;
     border-bottom: 1px solid #dedede;
@@ -226,10 +226,11 @@ iframe {
 .art-thumb {
   float: left;
   img {
+    cursor: pointer;
     width: 100%;
     display: block;
     border: 1px solid #dedede;
-    width: 5em;
+    max-height: 18em;
   }
 }
 
@@ -272,6 +273,14 @@ iframe {
 }
 
 // Contact Styles
+.main-contact {
+  &-text {
+    @media (min-width: $screen-md-min) {
+      padding-right: 12em;
+    }
+  }
+}
+
 .contact-icon {
   display: block;
   float: left;
