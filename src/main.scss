@@ -207,14 +207,14 @@ hr {
 
 .work-screenshot {
   border: 1px solid #dedede;
-  transition: box-shadow 0.2s linear;
+  transition: border 0.2s linear;
   margin-bottom: 1em;
 
   @media (min-width: $screen-md-min) {
     margin-bottom: 0;
   }
   &:hover {
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    border: 1px solid #3d97d2;
   }
 }
 
@@ -246,7 +246,7 @@ iframe {
     height: 65%;
     width: 65%;
     margin: 0 auto 1.5em;
-    transition: 0.2s;
+    transition: border 0.2s linear;
     &:hover {
       border: 1px solid #3d97d2;
     }

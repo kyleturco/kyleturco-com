@@ -150,13 +150,13 @@ hr {
 
 .work-screenshot {
   border: 1px solid #dedede;
-  transition: box-shadow 0.2s linear;
+  transition: border 0.2s linear;
   margin-bottom: 1em; }
   @media (min-width: 992px) {
     .work-screenshot {
       margin-bottom: 0; } }
   .work-screenshot:hover {
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25); }
+    border: 1px solid #3d97d2; }
 
 .work-title {
   margin-top: 0; }
@@ -180,7 +180,7 @@ iframe {
     height: 65%;
     width: 65%;
     margin: 0 auto 1.5em;
-    transition: 0.2s; }
+    transition: border 0.2s linear; }
     .art-thumb img:hover {
       border: 1px solid #3d97d2; }
     @media (min-width: 768px) {

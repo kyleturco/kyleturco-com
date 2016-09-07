@@ -5,8 +5,8 @@ angular
       .when('/', {
         templateUrl: 'assets/pages/landing.html',
       })
-      .when('/web', {
-        templateUrl: 'assets/pages/web.html',
+      .when('/work', {
+        templateUrl: 'assets/pages/work.html',
         controller: 'workCtrl',
         controllerAs: 'work',
       })
