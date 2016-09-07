@@ -192,28 +192,34 @@ hr {
   }
 }
 
-.web-screenshot {
-  background-size: 300px 245px;
-  display: block;
-  width: 300px;
-  height: auto;
-  margin-top: 25px;
-  img {
-    width: 100%;
-    border: 1px solid #dedede;
-  }
-}
+// work
+.work-item {
+  padding: 2em 0;
+  border-top: 1px solid #dedede;
 
-.web-project {
-  border-bottom: 1px solid #dedede;
-}
-
-.web-project,
-.web-project-bottom {
-  padding: 1.5em 0;
   @media (min-width: $screen-md-min) {
     padding: 4em 0;
   }
+  &:first-of-type {
+    border: none;
+  }
+}
+
+.work-screenshot {
+  border: 1px solid #dedede;
+  transition: box-shadow 0.2s linear;
+  margin-bottom: 1em;
+
+  @media (min-width: $screen-md-min) {
+    margin-bottom: 0;
+  }
+  &:hover {
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  }
+}
+
+.work-title {
+  margin-top: 0;
 }
 
 //Music Page

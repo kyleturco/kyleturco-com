@@ -1,52 +1,16 @@
 <div class="web-background">
   <div class="container">
-    <div class="row web-project clearfix">
-      <div class="web screenshot col-md-4">
-        <div class="web-screenshot">
-          <img src="assets/img/teachertracker-screenshot.jpg"/>
+    <div class="work-item" ng-repeat="work in work.workItems">
+      <div class="row">
+        <div class="col-md-5">
+          <a href="{{ work.linkUrl }}" target="_blank"><img class="work-screenshot img-responsive" src="{{ work.imagePath }}"></a>
         </div>
-      </div>
-      <div class="web description col-md-8">
-        <h3>TeacherTracker</h3>
-        <p>A full MEAN stack app created for private lesson music teachers. The app allows teachers to keep track of their students, schedule and lesson plans.</p>
-        <h4>Tech Stack</h4>
-        <ul>
-          <li>AngularJS</li>
-          <li>Bootstrap</li>
-          <li>MongoDB</li>
-          <li>Express</li>
-          <li>Node.js</li>
-        </ul>
-        <a
-          href="https://github.com/kyleturco/lesson-portal"
-          target="_blank"
-          class="btn btn-primary"
-        >
-          View Project
-        </a>
-      </div>
-    </div>
-    <div class="row web-project-bottom clearfix">
-      <div class="web screenshot col-md-4">
-        <div class="web-screenshot">
-          <img src="assets/img/bankroll-screenshot2.png"/>
+        <div class="col-md-7">
+          <h2 class="work-title">{{ work.title }}</h2>
+          <h4>{{ work.services }}</h4>
+          <p>{{ work.notes }}</p>
+          <a class="btn btn-primary" href="{{ work.linkUrl }}" target="_blank">View Work</a>
         </div>
-      </div>
-      <div class="web description col-md-8">
-        <h3>Bankroll App</h3>
-        <p>A simple app created to manage part-time freelance income and expenses. Built in AngularJS, Bankroll features user registration and logs yearly totals for income and expenses.</p>
-        <h4>Tech Stack</h4>
-        <ul>
-          <li>AngularJS</li>
-          <li>Firebase</li>
-        </ul>
-        <a
-          href="https://github.com/kyleturco/bankroll-app"
-          target="_blank"
-          class="btn btn-primary"
-        >
-          View Project
-        </a>
       </div>
     </div>
   </div>

@@ -4,7 +4,9 @@ angular.module('kyleTurco').config(function ($routeProvider) {
   $routeProvider.when('/', {
     templateUrl: 'assets/pages/landing.html'
   }).when('/web', {
-    templateUrl: 'assets/pages/web.html'
+    templateUrl: 'assets/pages/web.html',
+    controller: 'workCtrl',
+    controllerAs: 'work'
   }).when('/art', {
     templateUrl: 'assets/pages/illustration.html',
     controller: 'artCtrl',
