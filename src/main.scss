@@ -93,9 +93,13 @@ a:focus {
   .logo-header {
     font-family: $heading-font;
     font-weight: 300;
-    margin-top: 0;
+    margin-top: 0.5em;
     margin-bottom: 0;
     font-size: 1.5em;
+
+    @media (min-width: $screen-sm-min) {
+      margin-top: 0;
+    }
   }
 
   a {
@@ -157,10 +161,12 @@ hr {
 .homepage {
   &__header {
     text-align: center;
-    padding: 0 0 2em;
+    padding: 0 0 3em;
     font-size: 1.75em;
+    margin: 0;
 
     @media (min-width: $screen-sm-min) {
+      padding: 0 0 2em;
       font-size: 2.5em;
     }
   }
