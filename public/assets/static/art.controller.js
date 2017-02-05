@@ -5,24 +5,36 @@ angular.module('kyleTurco').controller('artCtrl', function ($scope) {
   var $artModal = $('#artModal');
   main.paintings = [{
     id: 'one',
+    title: 'Willow Bend Smokehouse',
+    medium: 'Oil on canvas',
+    notes: 'Drawn from a photo',
+    url: '/assets/img/west-virginia-barn-december-2016.jpg'
+  }, {
+    id: 'two',
+    title: "Daisy's Cafe",
+    medium: 'Faber Castell pens',
+    notes: 'Drawn from a photo',
+    url: '/assets/img/daisys-cafe-december-2016.jpg'
+  }, {
+    id: 'three',
     title: 'Italy Street',
     medium: 'Pen & Ink',
     notes: 'Drawn from a photo',
     url: '/assets/img/italy-street-2012.jpg'
   }, {
-    id: 'two',
+    id: 'four',
     title: 'Elephant',
     medium: 'Pen & Prismacolor Marker',
     notes: 'Drawn from a National Geographic',
     url: '/assets/img/elephant-january-2012.jpg'
   }, {
-    id: 'three',
+    id: 'five',
     title: 'Boston Building',
     medium: 'Ink & Watercolor',
     notes: 'Drawn from a photo',
     url: '/assets/img/boston-building-january-2012.jpg'
   }, {
-    id: 'four',
+    id: 'six',
     title: 'Man - Italy',
     medium: 'Pen & Prismacolor Marker',
     notes: 'Drawn from a photo',

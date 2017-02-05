@@ -220,28 +220,29 @@ hr {
 
 // Illustration Page
 .art-thumb {
-  float: left;
   @media (min-width: $screen-sm-min) {
     padding: 0 2em 0 0;
   }
 
-  img {
-    cursor: pointer;
-    display: block;
-    border: 1px solid #dedede;
-    height: 65%;
-    width: 65%;
-    margin: 0 auto 1.5em;
-    transition: border 0.2s linear;
-    &:hover {
-      border: 1px solid #3d97d2;
-    }
+  &__painting {
     @media (min-width: $screen-sm-min) {
       max-height: 13em;
       width: 100%;
     }
     @media (min-width: $screen-md-min) {
       max-height: 18em;
+    }
+  }
+
+  img {
+    cursor: pointer;
+    display: block;
+    border: 1px solid #dedede;
+    margin: 0 auto 1.5em;
+    transition: border 0.2s linear;
+
+    &:hover {
+      border: 1px solid #3d97d2;
     }
   }
 }

@@ -2,13 +2,13 @@
   <div class="container">
     <div class="illustration-section">
       <h3 class="art-header">Paintings/Drawings</h3>
-      <div class="thumb-row row clearfix">
+      <div class="thumb-row clearfix">
         <div
           class="col-sm-3 art-thumb"
           ng-click="art.modalLoad(painting.id, 'paintings')"
           ng-repeat="painting in art.paintings"
         >
-          <img ng-src="{{ painting.url }}">
+          <img class="art-thumb__painting img-responsive" ng-src="{{ painting.url }}">
         </div>
       </div>
     </div>
@@ -20,7 +20,7 @@
           ng-click="art.modalLoad(digital.id, 'digitals')"
           ng-repeat="digital in art.digitals"
         >
-          <img ng-src="{{ digital.url }}" class="landscape">
+          <img class="img-responsive" ng-src="{{ digital.url }}" class="landscape">
         </div>
       </div>
     </div>
@@ -32,7 +32,7 @@
           ng-click="art.modalLoad(cover.id, 'covers')"
           ng-repeat="cover in art.covers"
         >
-          <img ng-src="{{ cover.url }}">
+          <img class="img-responsive" ng-src="{{ cover.url }}">
         </div>
       </div>
     </div>
