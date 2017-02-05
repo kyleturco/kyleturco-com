@@ -5,6 +5,9 @@ angular
       .when('/', {
         templateUrl: 'assets/pages/landing.html',
       })
+      .when('/about', {
+        templateUrl: 'assets/pages/about.html',
+      })
       .when('/work', {
         templateUrl: 'assets/pages/work.html',
         controller: 'workCtrl',
