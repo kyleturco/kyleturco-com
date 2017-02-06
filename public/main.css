@@ -144,30 +144,33 @@ hr {
 .work-title {
   margin-top: 0; }
 
+.art__header {
+  margin: 0 0 1em; }
+
+.art__thumb-row {
+  margin: 1em 0 3em 0; }
+
 @media (min-width: 768px) {
-  .art-thumb {
+  .art__thumb {
     padding: 0 2em 0 0; } }
 
 @media (min-width: 768px) {
-  .art-thumb__painting {
+  .art__thumb--painting {
     max-height: 13em;
     width: 100%; } }
 
 @media (min-width: 992px) {
-  .art-thumb__painting {
+  .art__thumb--painting {
     max-height: 18em; } }
 
-.art-thumb img {
+.art__thumb img {
   cursor: pointer;
   display: block;
   border: 1px solid #dedede;
   margin: 0 auto 1.5em;
   transition: border 0.2s linear; }
-  .art-thumb img:hover {
+  .art__thumb img:hover {
     border: 1px solid #3d97d2; }
-
-.thumb-row {
-  margin: 1em 0 3em 0; }
 
 .music__video:last-of-type {
   margin-top: 2em; }

@@ -218,38 +218,44 @@ hr {
   margin-top: 0;
 }
 
-// Illustration Page
-.art-thumb {
-  @media (min-width: $screen-sm-min) {
-    padding: 0 2em 0 0;
+.art {
+  &__header {
+    margin: 0 0 1em;
   }
 
-  &__painting {
+  &__thumb-row {
+    margin: 1em 0 3em 0;
+  }
+
+  &__thumb {
     @media (min-width: $screen-sm-min) {
-      max-height: 13em;
-      width: 100%;
+      padding: 0 2em 0 0;
     }
-    @media (min-width: $screen-md-min) {
-      max-height: 18em;
+
+    &--painting {
+      @media (min-width: $screen-sm-min) {
+        max-height: 13em;
+        width: 100%;
+      }
+      @media (min-width: $screen-md-min) {
+        max-height: 18em;
+      }
     }
-  }
 
-  img {
-    cursor: pointer;
-    display: block;
-    border: 1px solid #dedede;
-    margin: 0 auto 1.5em;
-    transition: border 0.2s linear;
+    img {
+      cursor: pointer;
+      display: block;
+      border: 1px solid #dedede;
+      margin: 0 auto 1.5em;
+      transition: border 0.2s linear;
 
-    &:hover {
-      border: 1px solid #3d97d2;
+      &:hover {
+        border: 1px solid #3d97d2;
+      }
     }
   }
 }
 
-.thumb-row {
-  margin: 1em 0 3em 0;
-}
 
 .music {
   &__video {
