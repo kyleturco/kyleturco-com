@@ -192,45 +192,34 @@ hr {
     font-size: 2.5em;
     padding: 0 0.25em; }
 
-.modal-dialog {
-  width: 100%; }
-  @media (min-width: 992px) {
-    .modal-dialog {
-      width: 450px; } }
+@media (min-width: 992px) {
+  .art-modal__container {
+    width: 450px; } }
 
-.modal-header {
+.art-modal__header {
   border: none; }
 
-.modal-content {
+.art-modal__content {
   border-radius: 0;
   background: none;
   box-shadow: none;
   border: none; }
 
-.modal-backdrop {
-  opacity: 0.9 !important; }
-
-.modal-body {
-  margin-bottom: 20px; }
-
-.art-large {
+.art-modal__image-container {
   width: 100%; }
-  .art-large img {
-    width: 100%; }
 
-.close {
+.art-modal .close {
   opacity: 1;
   text-shadow: none;
   color: #dedede; }
 
-.modal-text h3, .modal-text p {
-  color: #fff; }
+.art-modal__text-container--title {
+  color: #ffffff;
+  margin: 1em 0 0.5em; }
 
-.modal-text .medium,
-.modal-text .notes {
+.art-modal__text-container--notes {
   margin: 0;
-  opacity: 0.8; }
+  color: #b8b8b8; }
 
-.modal-header .close {
-  margin-top: -12px;
-  margin-right: -6px; }
+.modal-backdrop {
+  opacity: 0.9 !important; }

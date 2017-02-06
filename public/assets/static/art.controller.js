@@ -7,7 +7,7 @@ angular.module('kyleTurco').controller('artCtrl', function ($scope) {
     id: 'one',
     title: 'Willow Bend Smokehouse',
     medium: 'Oil on canvas',
-    notes: 'Drawn from a photo',
+    notes: 'Painted from a photo',
     url: '/assets/img/west-virginia-barn-december-2016.jpg'
   }, {
     id: 'two',

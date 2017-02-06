@@ -9,11 +9,17 @@
   }
 }
 
+// Media breakpoints
 $screen-sm-min: 768px;
 $screen-md-min: 992px;
 
+// Font Variables
 $heading-font: 'Nunito Sans', sans-serif;
 $body-font: 'Source Sans Pro', sans-serif;
+
+// Color variables
+$white: #ffffff;
+$border-color: #dedede;
 
 h1, h2, h3, h4 {
   font-family: $heading-font;
@@ -34,7 +40,7 @@ p, li {
 }
 
 .content-section {
-  border-top: 1px solid #dedede;
+  border-top: 1px solid $border-color;
   padding: 4em 0;
 }
 
@@ -67,7 +73,7 @@ a:focus {
 
   &-default {
     border: none;
-    border-bottom: 1px solid #dedede;
+    border-bottom: 1px solid $border-color;
   }
 }
 .navbar-default {
@@ -115,7 +121,7 @@ a:focus {
   text-align: center;
 
   &__main {
-    border-top: 1px solid #dedede;
+    border-top: 1px solid $border-color;
     padding: 2em 0 1em;
   }
 
@@ -154,7 +160,7 @@ a:focus {
 }
 
 hr {
-  border-top: 1px solid #dedede;
+  border-top: 1px solid $border-color;
 }
 
 //Homepage styles
@@ -185,7 +191,7 @@ hr {
 // work
 .work-item {
   padding: 2em 0;
-  border-top: 1px solid #dedede;
+  border-top: 1px solid $border-color;
 
   @media (min-width: $screen-md-min) {
     padding: 4em 0;
@@ -202,7 +208,7 @@ hr {
 }
 
 .work-screenshot {
-  border: 1px solid #dedede;
+  border: 1px solid $border-color;
   transition: border 0.2s linear;
   margin-bottom: 1em;
 
@@ -245,7 +251,7 @@ hr {
     img {
       cursor: pointer;
       display: block;
-      border: 1px solid #dedede;
+      border: 1px solid $border-color;
       margin: 0 auto 1.5em;
       transition: border 0.2s linear;
 
@@ -292,60 +298,47 @@ hr {
   }
 }
 
-// Modal Styles
-.modal-dialog {
-  width: 100%;
-  @media (min-width: $screen-md-min) {
-    width: 450px;
+.art-modal {
+  &__container {
+    @media (min-width: $screen-md-min) {
+      width: 450px;
+    }
   }
-}
 
-.modal-header {
-  border: none;
-}
+  &__header {
+    border: none;
+  }
 
-.modal-content {
-  border-radius: 0;
-  background: none;
-  box-shadow: none;
-  border: none;
+  &__content {
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+    border: none;
+  }
+
+  &__image-container {
+    width: 100%;
+  }
+
+  .close {
+    opacity: 1;
+    text-shadow: none;
+    color: $border-color;
+  }
+
+  &__text-container {
+    &--title {
+      color: $white;
+      margin: 1em 0 0.5em;
+    }
+
+    &--notes {
+      margin: 0;
+      color: darken($border-color, 15%);
+    }
+  }
 }
 
 .modal-backdrop {
   opacity: 0.9 !important;
-}
-
-.modal-body {
-  margin-bottom: 20px;
-}
-
-.art-large {
-  width: 100%;
-  img {
-    width: 100%;
-  }
-}
-
-.close {
-  opacity: 1;
-  text-shadow: none;
-  color: #dedede;
-}
-
-.modal-text {
-  h3, p {
-    color: #fff;
-  }
-  .medium,
-  .notes {
-    margin: 0;
-    opacity: 0.8;
-  }
-}
-
-.modal-header {
-  .close {
-    margin-top: -12px;
-    margin-right: -6px;
-  }
 }
