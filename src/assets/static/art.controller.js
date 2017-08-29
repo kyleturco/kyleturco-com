@@ -3,6 +3,7 @@ angular
   .controller('artCtrl', function ($scope) {
     var main = this
     var $artModal = $('#artModal')
+
     main.paintings = [
       {
         id: 'one',

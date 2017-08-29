@@ -10,9 +10,11 @@ angular.module('kyleTurco').config(function ($routeProvider) {
     controller: 'workCtrl',
     controllerAs: 'work'
   }).when('/art', {
-    templateUrl: 'assets/pages/illustration.html',
+    templateUrl: 'assets/pages/art.html',
     controller: 'artCtrl',
     controllerAs: 'art'
+  }).when('/art/paintings', {
+    templateUrl: 'assets/pages/paintings.html'
   }).when('/music', {
     templateUrl: 'assets/pages/music.html'
   }).when('/contact', {
