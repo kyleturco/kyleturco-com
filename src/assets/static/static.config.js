@@ -21,6 +21,9 @@ angular
       .when('/art/paintings', {
         templateUrl: 'assets/pages/paintings.html',
       })
+      .when('/art/illustration', {
+        templateUrl: 'assets/pages/illustration.html',
+      })
       .when('/music', {
         templateUrl: 'assets/pages/music.html'
       })
