@@ -20,8 +20,12 @@ $body-font: 'Source Sans Pro', sans-serif;
 // Color variables
 $white: #ffffff;
 $border-color: #dedede;
+$brand-primary: #3d97d2;
 
-h1, h2, h3, h4 {
+.h1, h1,
+.h2, h2,
+.h3, h3,
+.h4, h4 {
   font-family: $heading-font;
   color: #404040;
   font-weight: 400;
@@ -55,8 +59,8 @@ a:hover, a:visited, a:active, a:focus {
 }
 
 a:focus {
-  color: #3d97d2;
-  // border-bottom: 3px solid #3d97d2;
+  color: $brand-primary;
+  // border-bottom: 3px solid $brand-primary;
 }
 
 
@@ -92,7 +96,7 @@ a:focus {
   margin: 0 0.75em;
 
   &:hover {
-    color: #3d97d2;
+    color: $brand-primary;
   }
 }
 .header-logo {
@@ -148,7 +152,7 @@ a:focus {
 .btn-primary {
   font-family: $body-font;
   text-transform: uppercase;
-  background-color: #3d97d2;
+  background-color: $brand-primary;
   color: #fff;
   border-radius: 0;
   border: none;
@@ -216,7 +220,7 @@ hr {
     margin-bottom: 0;
   }
   &:hover {
-    border: 1px solid #3d97d2;
+    border: 1px solid $brand-primary;
   }
 }
 
@@ -256,7 +260,7 @@ hr {
       transition: border 0.2s linear;
 
       &:hover {
-        border: 1px solid #3d97d2;
+        border: 1px solid $brand-primary;
       }
     }
   }
@@ -336,6 +340,35 @@ hr {
       margin: 0;
       color: darken($border-color, 15%);
     }
+  }
+}
+
+.blog {
+  &__post-container {
+    border-bottom: 1px solid $border-color;
+
+    @media (min-width: $screen-md-min) {
+      padding: 0 8rem;
+    }
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+
+  &__post-content {
+    margin: 2rem 0 3rem;
+  }
+
+  &__post-tag {
+    font-family: $heading-font;
+    font-size: 1.25em;
+    color: $brand-primary;
+    margin-bottom: 0.5rem;
+  }
+
+  &__img {
+    margin: 2rem 0;
   }
 }
 

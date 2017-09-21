@@ -1,4 +1,7 @@
-h1, h2, h3, h4 {
+.h1, h1,
+.h2, h2,
+.h3, h3,
+.h4, h4 {
   font-family: "Nunito Sans", sans-serif;
   color: #404040;
   font-weight: 400; }
@@ -220,6 +223,26 @@ hr {
 .art-modal__text-container--notes {
   margin: 0;
   color: #b8b8b8; }
+
+.blog__post-container {
+  border-bottom: 1px solid #dedede; }
+  @media (min-width: 992px) {
+    .blog__post-container {
+      padding: 0 8rem; } }
+  .blog__post-container:last-of-type {
+    border-bottom: none; }
+
+.blog__post-content {
+  margin: 2rem 0 3rem; }
+
+.blog__post-tag {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.25em;
+  color: #3d97d2;
+  margin-bottom: 0.5rem; }
+
+.blog__img {
+  margin: 2rem 0; }
 
 .modal-backdrop {
   opacity: 0.9 !important; }

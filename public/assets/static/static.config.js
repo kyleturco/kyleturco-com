@@ -15,6 +15,10 @@ angular.module('kyleTurco').config(function ($routeProvider) {
     controllerAs: 'art'
   }).when('/music', {
     templateUrl: 'assets/pages/music.html'
+  }).when('/blog', {
+    templateUrl: 'assets/pages/blog.html',
+    controller: 'blogCtrl',
+    controllerAs: 'blog'
   }).when('/contact', {
     templateUrl: 'assets/pages/contact.html'
   }).otherwise({
