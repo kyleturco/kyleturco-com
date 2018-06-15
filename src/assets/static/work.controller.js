@@ -17,12 +17,5 @@ angular
         imagePath: '/assets/img/vns-screenshot.jpg',
         linkUrl: 'http://vnswl.com',
       },
-      {
-        title: 'Collide Media Group',
-        services: 'Website Design/Build',
-        notes: 'Designed and built a custom, one-page WordPress site for Collide MG in Franklin, TN. Features a minimal, business-minded design, as well as custom team member pages',
-        imagePath: '/assets/img/collide-mg-screenshot.jpg',
-        linkUrl: 'http://collidemg.com',
-      },
     ]
   })
