@@ -238,25 +238,15 @@ hr {
   }
 
   &__thumb {
-    @media (min-width: $screen-sm-min) {
-      padding: 0 2em 0 0;
-    }
-
     &--painting {
-      @media (min-width: $screen-sm-min) {
-        max-height: 13em;
-        width: 100%;
-      }
-      @media (min-width: $screen-md-min) {
-        max-height: 18em;
-      }
+      width: 100%;
     }
 
     img {
       cursor: pointer;
       display: block;
       border: 1px solid $border-color;
-      margin: 0 auto 1.5em;
+      margin: 0 auto 3rem;
       transition: border 0.2s linear;
 
       &:hover {
@@ -305,7 +295,7 @@ hr {
 .art-modal {
   &__container {
     @media (min-width: $screen-md-min) {
-      width: 450px;
+      width: 700px;
     }
   }
 

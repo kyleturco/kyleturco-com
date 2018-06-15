@@ -6,107 +6,68 @@ angular
     main.paintings = [
       {
         id: 'one',
-        title: 'Willow Bend Smokehouse',
+        title: 'Afternoon at Long Hunter',
         medium: 'Oil on canvas',
-        notes: 'Painted from a photo',
-        url: '/assets/img/west-virginia-barn-december-2016.jpg'
+        notes: 'Plein air at Long Hunter State Park',
+        url: '/assets/img/kyle-turco-afternoon-at-long-hunter.jpg',
+        thumbUrl: '/assets/img/kyle-turco-afternoon-at-long-hunter-thumb.jpg',
       },
       {
         id: 'two',
-        title: "Daisy's Cafe",
-        medium: 'Faber Castell pens',
-        notes: 'Drawn from a photo',
-        url: '/assets/img/daisys-cafe-december-2016.jpg'
+        title: "Three Trees at Ellington",
+        medium: 'Oil on board',
+        notes: 'Plein air at Ellington Agricultural Center',
+        url: '/assets/img/kyle-turco-three-trees-at-ellington.jpg',
+        thumbUrl: '/assets/img/kyle-turco-three-trees-at-ellington-thumb.jpg',
       },
       {
         id: 'three',
-        title: 'Italy Street',
-        medium: 'Pen & Ink',
-        notes: 'Drawn from a photo',
-        url: '/assets/img/italy-street-2012.jpg'
+        title: 'Smith Brothers Car Wash',
+        medium: 'Gouache on paper',
+        notes: '',
+        url: '/assets/img/kyle-turco-smith-bros-car-wash.jpg',
+        thumbUrl: '/assets/img/kyle-turco-smith-bros-car-wash-thumb.jpg',
       },
       {
         id: 'four',
-        title: 'Elephant',
-        medium: 'Pen & Prismacolor Marker',
-        notes: 'Drawn from a National Geographic',
-        url: '/assets/img/elephant-january-2012.jpg'
+        title: 'Along the Harpeth',
+        medium: 'Oil on board',
+        notes: 'Plein air at Edwin Warner Park',
+        url: '/assets/img/kyle-turco-along-the-harpeth.jpg',
+        thumbUrl: '/assets/img/kyle-turco-along-the-harpeth-thumb.jpg',
       },
       {
         id: 'five',
-        title: 'Boston Building',
-        medium: 'Ink & Watercolor',
-        notes: 'Drawn from a photo',
-        url: '/assets/img/boston-building-january-2012.jpg'
+        title: 'Grandview Ave',
+        medium: 'Gouache on paper',
+        notes: 'Plein air in Nashville',
+        url: '/assets/img/kyle-turco-grandview-ave.jpg',
+        thumbUrl: '/assets/img/kyle-turco-grandview-ave-thumb.jpg',
       },
       {
         id: 'six',
-        title: 'Man - Italy',
-        medium: 'Pen & Prismacolor Marker',
-        notes: 'Drawn from a photo',
-        url: '/assets/img/italy-man-december-2011.jpg'
-      }
-    ]
-
-    main.digitals = [
-      {
-        id: 'one',
-        title: 'Soccer Player',
-        medium: 'Adobe Illustrator',
-        notes: 'Created for TechnologyAdvice.com',
-        url: '/assets/img/digital-soccer.png'
+        title: 'Enoshima Station',
+        medium: 'Oil on cradled birch',
+        notes: 'Studio painting',
+        url: '/assets/img/kyle-turco-enoshima-station.jpg',
+        thumbUrl: '/assets/img/kyle-turco-enoshima-station-thumb.jpg',
       },
       {
-        id: 'two',
-        title: 'Machine',
-        medium: 'Adobe Illustrator',
-        notes: 'Created for TechnologyAdvice.com',
-        url: '/assets/img/digital-machine.png'
+        id: 'seven',
+        title: 'Sunset on Mill Creek',
+        medium: 'Gouache on paper',
+        notes: 'Plein air at Mill Creek Greenway',
+        url: '/assets/img/kyle-turco-sunset-on-mill-creek.jpg',
+        thumbUrl: '/assets/img/kyle-turco-sunset-on-mill-creek-thumb.jpg',
       },
       {
-        id: 'three',
-        title: 'Optometry',
-        medium: 'Adobe Illustrator',
-        notes: 'Created for TechnologyAdvice.com',
-        url: '/assets/img/digital-optometry.png'
+        id: 'eight',
+        title: 'Alley Behind La Hacienda',
+        medium: 'Gouache on paper',
+        notes: 'Plein air in Nashville',
+        url: '/assets/img/kyle-turco-alley-behind-la-hacienda.jpg',
+        thumbUrl: '/assets/img/kyle-turco-alley-behind-la-hacienda-thumb.jpg',
       },
-      {
-        id: 'four',
-        title: 'Marathon Runner',
-        medium: 'Adobe Illustrator',
-        notes: 'Created for TechnologyAdvice.com',
-        url: '/assets/img/digital-marathon-runner.png'
-      }
-    ]
-    main.covers = [
-      {
-        id: 'one',
-        title: 'Weight of the World - Cover',
-        medium: 'Pen & Ink',
-        notes: 'Created for Colma - Drawn from a Smithsonian photo',
-        url: '/assets/img/colma-weight-of-the-world-cover.jpg'
-      },
-      {
-        id: 'two',
-        title: 'Find Your Way - Cover',
-        medium: 'Ink drawing - digitized with Photoshop and Illustrator',
-        notes: 'Created for Dynamo',
-        url: '/assets/img/dynamo-find-your-way-cover.jpg'
-      },
-      {
-        id: 'three',
-        title: 'Live at Oceanway - Cover',
-        medium: 'Created in Adobe Illustrator',
-        notes: 'Created for Dynamo',
-        url: '/assets/img/dynamo-ocean-way-cover.jpg'
-      },
-      {
-        id: 'four',
-        title: 'Toothbrush EP - Cover',
-        medium: 'Ink & Watercolor - digitized in Photoshop',
-        notes: 'Created for Sam Allen',
-        url: '/assets/img/sam-allen-toothbrush-ep.jpg'
-      }
     ]
     main.modalLoad = function (id, group) {
       main[group].forEach(function (painting) {

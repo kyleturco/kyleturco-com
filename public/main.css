@@ -153,24 +153,14 @@ hr {
 .art__thumb-row {
   margin: 1em 0 3em 0; }
 
-@media (min-width: 768px) {
-  .art__thumb {
-    padding: 0 2em 0 0; } }
-
-@media (min-width: 768px) {
-  .art__thumb--painting {
-    max-height: 13em;
-    width: 100%; } }
-
-@media (min-width: 992px) {
-  .art__thumb--painting {
-    max-height: 18em; } }
+.art__thumb--painting {
+  width: 100%; }
 
 .art__thumb img {
   cursor: pointer;
   display: block;
   border: 1px solid #dedede;
-  margin: 0 auto 1.5em;
+  margin: 0 auto 3rem;
   transition: border 0.2s linear; }
   .art__thumb img:hover {
     border: 1px solid #3d97d2; }
@@ -197,7 +187,7 @@ hr {
 
 @media (min-width: 992px) {
   .art-modal__container {
-    width: 450px; } }
+    width: 700px; } }
 
 .art-modal__header {
   border: none; }
